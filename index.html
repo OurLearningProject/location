@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>REST Countries API</title>
+    <title>Location and Flag By IP</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>REST Countries API</h1>
+    <h1>Location and Flag By IP</h1>
     <div id="main-container">
-      <div id="flag-container">
-        <img src="" alt="">
-      </div>
-      <div id="info-container">
-        <select id="countries"></select>
          <div id="ip"></div>
      <div id="c"></div>
      <div id="cn"></div>
+
+<img class="id-of-img-tag" src="" alt="img">
      <div><a href="" id="get_loc">Click Here To See The Map</a></div>
 
   <iframe src="" width="425" height="350" id="google_map"></iframe>
@@ -50,3 +47,16 @@
              return false;
            }
   </script>
+<script type="text/javascript">
+  var userip;
+  
+</script>
+<script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
+
+<script type="text/javascript">
+            var string_url = "https://api.ipfind.com/flag?" + "ip=" + userip + "&auth=d340deb5-1ae5-41e5-a182-30b9adf24d50";
+            
+            document.querySelector(".id-of-img-tag").src = string_url;
+
+
+</script>
